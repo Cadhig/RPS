@@ -7,11 +7,13 @@ body {
 
 header {
     font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #choices {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 
 }
 
@@ -19,9 +21,35 @@ button {
     font-size: 50px;
     padding: 30px;
     border-radius: 50%;
-
+    background-color: lightblue;
 }
 
 main {
     font-size: 50px;
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: .5rem;
+    border: 1px solid black;
+}
+
+#score-text {
+    text-align: center;
+}
+
+#score-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.black {
+    color: black;
 }

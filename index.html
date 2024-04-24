@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>RPS</header>
+    <header>RPS Game</header>
     <main>
         <div class="computer-response"></div>
         <div id="choices">
@@ -14,8 +14,12 @@
             <button onclick="game('paper')">📜</button>
             <button onclick="game('scissors')">✂️</button>
         </div> 
-        <div id="player-score">0</div>
-        <div id="opponent-score">0</div>
+        <div id="score-text">Score<div>
+        <div id="score-box">
+            <div id="player-score">0</div>
+            <div>|</div>
+            <div id="opponent-score">0</div>
+        </div>
         <div id="player-choice">YOU: </div>
         <div id="opponent-choice">OPPONENT: </div>
         <div id="result"></div>

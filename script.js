@@ -49,7 +49,19 @@ function game(choice) {
     if (choice === 'rock') {
         playerChoice.textContent = `YOU: ⛰️`
     }
+
+    if (result === "YOU WIN!") {
+        resultDisplay.setAttribute('class', 'green')
+    }
+
+    if (result === "YOU LOSE") {
+        resultDisplay.setAttribute('class', 'red')
+    }
     resultDisplay.textContent = `${result}`
+
+    if (result === "TIE") {
+        resultDisplay.setAttribute('class', 'black')
+    }
 
     if (result === 'YOU WIN!') {
         const playerScore = document.getElementById('player-score')
