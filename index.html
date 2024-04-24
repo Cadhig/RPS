@@ -2,22 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>RPS</header>
     <main>
-        <div class="score"></div>
         <div class="computer-response"></div>
         <div id="choices">
-        <button onclick="game('rock')">Rock</button>
-        <button onclick="game('paper')">Paper</button>
-        <button onclick="game('scissors')">Scissors</button>
-        </div>
-
+            <button onclick="game('rock')">⛰️</button>
+            <button onclick="game('paper')">📜</button>
+            <button onclick="game('scissors')">✂️</button>
+        </div> 
+        <div id="player-score">0</div>
+        <div id="opponent-score">0</div>
         <div id="player-choice">YOU: </div>
         <div id="opponent-choice">OPPONENT: </div>
-        <div id="result">TIE</div>
+        <div id="result"></div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
